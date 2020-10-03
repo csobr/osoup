@@ -1,7 +1,25 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
+import { InferGetStaticPropsType } from 'next';
+type Soups = {
+  id: number;
+  name: string;
+  image: string;
+};
 
-export default function Home() {
+export const getStaticProps = async () => {
+  const res = await fetch('http://localhost:3000/api/soups');
+  const soups: Soups[] = await res.json();
+
+  return {
+    props: {
+      soups,
+    },
+  };
+};
+export default function Home({
+  soups,
+}: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <div className={styles.container}>
       <Head>
