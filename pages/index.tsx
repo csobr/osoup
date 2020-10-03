@@ -61,14 +61,16 @@ export default function Home({
         </div>
         <h2>All our soup</h2>
         <div className={styles.cardContainer}>
-          <div className={styles.card}>
-            <img alt='' src='/mushroom.jpg' />
-            <p style={{ fontSize: 16 }}>Mushroom soup</p>
-            <p style={{ fontSize: 14, float: 'right', fontWeight: 'bold' }}>
-              129 SEK
-            </p>
-            <p style={{ fontSize: 12 }}>Swedish</p>
-          </div>
+          {soups.map((soup) => [
+            <div key={soup.id} className={styles.card}>
+              <img alt='soup' src={soup.image} />
+              <p style={{ fontSize: 16 }}>{soup.name}</p>
+              <p style={{ fontSize: 14, float: 'right', fontWeight: 'bold' }}>
+                129 SEK
+              </p>
+              <p style={{ fontSize: 12 }}>Swedish</p>
+            </div>,
+          ])}
         </div>
       </main>
 

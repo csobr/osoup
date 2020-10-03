@@ -5,7 +5,7 @@ export default (req, res) => {
       id: 1,
       name: 'mushroom soup',
       image:
-        'https://i2.wp.com/simple-veganista.com/wp-content/uploads/2019/10/best-vegan-mushroom-soup-4.jpg',
+        'https://keyassets-p2.timeincuk.net/wp/prod/wp-content/uploads/sites/53/2018/09/mushroom-soup.jpg',
     },
     {
       id: 2,
@@ -41,7 +41,7 @@ export default (req, res) => {
       id: 7,
       name: 'Potato and leak soup',
       image:
-        'https://pinchandswirl.com/wp-content/uploads/2015/10/Potato-Leek-Soup-served-in-white-bowls-square.jpg',
+        'https://food-images.files.bbci.co.uk/food/recipes/leekandpotatosoup_1920_16x9.jpg',
     },
     {
       id: 8,
