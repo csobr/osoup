@@ -52,10 +52,12 @@ export default function Home({
         </div>
         <h2 className={styles.h2}>Popular</h2>
         <div className={styles.popularSlider}>
-          <div className={styles.popularImage}>
-            <img width='110' height='110' alt='' src='/mushroom.jpg' />
-            <p>Mushroom soup</p>
-          </div>
+          {soups.map((soup) => (
+            <div key={soup.id} className={styles.popularImage}>
+              <img width='110' height='110' alt='' src={soup.image} />
+              <p>{soup.name}</p>
+            </div>
+          ))}
         </div>
         <h2>All our soup</h2>
         <div className={styles.cardContainer}>
