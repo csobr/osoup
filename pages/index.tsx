@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import { InferGetStaticPropsType } from 'next';
-type Soups = {
+export type Soups = {
   id: number;
   name: string;
   image: string;
@@ -17,6 +17,7 @@ export const getStaticProps = async () => {
     },
   };
 };
+
 export default function Home({
   soups,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
@@ -63,7 +64,9 @@ export default function Home({
         <div className={styles.cardContainer}>
           {soups.map((soup) => [
             <div key={soup.id} className={styles.card}>
-              <img alt='soup' src={soup.image} />
+              <a href='/soups'>
+                <img alt='soup' src={soup.image} />
+              </a>
               <p style={{ fontSize: 16 }}>{soup.name}</p>
               <p style={{ fontSize: 14, float: 'right', fontWeight: 'bold' }}>
                 129 SEK
