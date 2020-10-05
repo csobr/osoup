@@ -3,7 +3,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background-color: #fafafa;
+  background-color: #ffffff;
   font-family: 'Quicksand', sans-serif;
 }
 
@@ -21,11 +21,13 @@ button {
   height: 65px;
   background: #20d994;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
   color: #fafafa;
   border: 0;
   outline-style: solid #000;
   cursor: pointer;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
 }
 input {
   border: 0;

@@ -22,7 +22,7 @@ export default function Order() {
               paddingBottom: '1rem',
             }}>
             <p style={{ margin: 0 }}>Mushroom Soup</p>
-            <p style={{ marginTop: '5px', color: '#9d9d9d', fontSize: 12 }}>
+            <p style={{ marginTop: 5, color: '#9d9d9d', fontSize: 12 }}>
               129 SEK
             </p>
           </section>
@@ -72,6 +72,110 @@ export default function Order() {
             />
           </label>
         </section>
+        <section>
+          <div className={styles.map}></div>
+        </section>
+        <section>
+          <p className={styles.title}>Adress</p>
+          <input type='submit' value='edit' className={styles.edit} />
+          <p className={styles.underTitle}>
+            Västra Finnbodavägen 4, 131 30 Nacka
+          </p>
+        </section>
+        <section>
+          <p style={{ marginBottom: 2 }} className={styles.title}>
+            Delivery Date
+          </p>
+          <input type='submit' value='edit' className={styles.edit} />
+          <p style={{ marginTop: 0 }} className={styles.underTitle}>
+            ASAP
+          </p>
+
+          <div className={styles.align}>
+            {' '}
+            <img
+              style={{ height: 15, paddingLeft: 5, marginTop: '4.5%' }}
+              src='./icons/clock.png'
+              alt='clock icon'
+            />
+            <p className={styles.underTitle}>Estimated Time of Arrival</p>
+            <p
+              style={{ right: 12, position: 'absolute' }}
+              className={styles.underTitle}>
+              15-20 min
+            </p>
+          </div>
+        </section>
+        <section style={{ marginTop: '10%' }}>
+          <p className={styles.title}>Add greeting</p>
+          <textarea
+            className={styles.textarea}
+            autoFocus={true}
+            placeholder='Add a greeting to the recipient. '
+          />
+        </section>
+        <section>
+          <div
+            style={{
+              borderTop: 'solid',
+              borderColor: '#ddd',
+              borderWidth: 1,
+              width: '93%',
+              margin: 'auto',
+            }}
+          />
+          <div className={styles.align}>
+            <p className={styles.underTitle}>Estimated Subtotal:</p>
+            <p
+              style={{ right: 12, position: 'absolute' }}
+              className={styles.underTitle}>
+              386 SEK
+            </p>
+          </div>
+          <div className={styles.align}>
+            <p className={styles.underTitle}>Delivery:</p>
+            <p
+              style={{ right: 12, position: 'absolute' }}
+              className={styles.underTitle}>
+              39 SEK
+            </p>
+          </div>
+
+          <div className={styles.align}>
+            <p className={styles.underTitle}>VAT(10%):</p>
+            <p
+              style={{ right: 12, position: 'absolute' }}
+              className={styles.underTitle}>
+              20 SEK
+            </p>
+          </div>
+          <div className={styles.align}>
+            <p style={{ marginBottom: 2 }} className={styles.title}>
+              Total:
+            </p>
+            <p
+              style={{ right: 12, position: 'absolute' }}
+              className={styles.underTitle}>
+              426 SEK
+            </p>
+          </div>
+          <p
+            style={{ marginTop: 0, marginBottom: 20 }}
+            className={styles.underTitle}>
+            (incl. VAT){' '}
+          </p>
+        </section>
+        <p
+          style={{
+            color: '#ffffff',
+            position: 'absolute',
+            right: 0,
+            marginRight: '2.5%',
+            marginTop: '1.5rem',
+          }}>
+          426 SEK
+        </p>
+        <button>Continue </button>
       </div>
     </div>
   );
