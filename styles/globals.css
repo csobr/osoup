@@ -22,4 +22,7 @@ button {
   background: #20d994;
   text-transform: uppercase;
   font-weight: 600;
+  color: #fafafa;
+  border: 0;
+  outline-style: solid #000;
 }

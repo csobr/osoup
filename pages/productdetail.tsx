@@ -7,17 +7,25 @@ export default function ProductDetail() {
         <title>Product Detail</title>
       </Head>
       <img src='' alt='' className={styles.productImage} />
-      <h3>Mushroom soup</h3>
-      <p>A rich mushroom soup.</p>
-      <section>
-        <p>Ingredients:</p>
-        <p>
+
+      <section className={styles.description}>
+        <h3 style={{ marginBottom: '8px' }}>
+          Mushroom soup{' '}
+          <img
+            src='/icons/vegan.png'
+            alt='icon'
+            style={{ right: '5%', position: 'absolute' }}
+          />{' '}
+        </h3>
+        <p style={{ margin: 0 }}>A rich mushroom soup.</p>
+        <p style={{ fontWeight: 600, marginBottom: '10px' }}>Ingredients:</p>
+        <p style={{ marginTop: 0 }}>
           Onion, garlic, water, mushroom, oatcream, vegtable brooth, carrots,
           corriander, parsley.
         </p>
       </section>
       <section className={styles.removeIngredient}>
-        <p>Remove ingredient:</p>
+        <p style={{ fontWeight: 'bold' }}>Remove ingredient:</p>
         <li className={styles.removeIngredientList}>
           Corrinader{' '}
           <img
@@ -34,8 +42,15 @@ export default function ProductDetail() {
             style={{ right: '10%', position: 'absolute' }}
           />
         </li>
+
+        <div className={styles.add}>
+          <img src='./icons/minus.png' alt='minus' />
+          <p>1</p>
+
+          <img src='./icons/plus.png' alt='plus' />
+        </div>
+        <button className={styles.button}>Add to cart</button>
       </section>
-      <button className={styles.button}>Add to cart</button>
     </div>
   );
 }
