@@ -45,7 +45,7 @@ export default function Home({
             </label>
             <input
               type='submit'
-              name='Pick soup'
+              value='Pick soup'
               className={styles.adressPick}
             />
           </section>

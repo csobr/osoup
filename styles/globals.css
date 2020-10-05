@@ -25,4 +25,10 @@ button {
   color: #fafafa;
   border: 0;
   outline-style: solid #000;
+  cursor: pointer;
+}
+input {
+  border: 0;
+  font-family: 'Quicksand', sans-serif;
+  cursor: pointer;
 }

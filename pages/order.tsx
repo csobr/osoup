@@ -33,6 +33,45 @@ export default function Order() {
             <img src='./icons/plus.png' alt='plus' />
           </div>
         </li>
+        <section className={styles.choice}>
+          <input type='submit' value='Yourself' className={styles.yourself} />{' '}
+          <input type='submit' value='Gift' className={styles.gift} />
+        </section>{' '}
+        <h3 style={{ marginLeft: '5%' }}>Recipient</h3>
+        <section className={styles.userDetails}>
+          <label htmlFor='Phone number' className={styles.label}>
+            Phone number
+            <input
+              type='number'
+              required
+              minLength={10}
+              maxLength={13}
+              className={styles.input}
+            />
+          </label>
+
+          <label htmlFor='First name' className={styles.label}>
+            {' '}
+            First name
+            <input
+              type='text'
+              required
+              minLength={2}
+              maxLength={15}
+              className={styles.input}
+            />
+          </label>
+          <label htmlFor='Last name' className={styles.label}>
+            Last name
+            <input
+              type='text'
+              required
+              minLength={2}
+              maxLength={15}
+              className={styles.input}
+            />
+          </label>
+        </section>
       </div>
     </div>
   );
