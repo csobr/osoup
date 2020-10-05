@@ -76,9 +76,11 @@ export default function Order() {
           <div className={styles.map}></div>
         </section>
         <section>
-          <p className={styles.title}>Adress</p>
+          <p style={{ marginBottom: 2 }} className={styles.title}>
+            Adress
+          </p>
           <input type='submit' value='edit' className={styles.edit} />
-          <p className={styles.underTitle}>
+          <p style={{ marginTop: 0 }} className={styles.underTitle}>
             Västra Finnbodavägen 4, 131 30 Nacka
           </p>
         </section>
@@ -94,7 +96,7 @@ export default function Order() {
           <div className={styles.align}>
             {' '}
             <img
-              style={{ height: 15, paddingLeft: 5, marginTop: '4.5%' }}
+              style={{ height: 15, marginLeft: 10, marginTop: '4.5%' }}
               src='./icons/clock.png'
               alt='clock icon'
             />
@@ -107,7 +109,9 @@ export default function Order() {
           </div>
         </section>
         <section style={{ marginTop: '10%' }}>
-          <p className={styles.title}>Add greeting</p>
+          <p style={{ marginBottom: 3 }} className={styles.title}>
+            Add greeting
+          </p>
           <textarea
             className={styles.textarea}
             autoFocus={true}
