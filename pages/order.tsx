@@ -38,7 +38,7 @@ export default function Order() {
           <input type='submit' value='Gift' className={styles.gift} />
         </section>{' '}
         <h3 style={{ marginLeft: '5%' }}>Recipient</h3>
-        <section className={styles.userDetails}>
+        <form className={styles.userDetails}>
           <label htmlFor='Phone number' className={styles.label}>
             Phone number
             <input
@@ -71,7 +71,7 @@ export default function Order() {
               className={styles.input}
             />
           </label>
-        </section>
+        </form>
         <section>
           <div className={styles.map}></div>
         </section>
@@ -158,8 +158,8 @@ export default function Order() {
               Total:
             </p>
             <p
-              style={{ right: 12, position: 'absolute' }}
-              className={styles.underTitle}>
+              style={{ right: 12, position: 'absolute', marginBottom: 0 }}
+              className={styles.title}>
               426 SEK
             </p>
           </div>
