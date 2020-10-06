@@ -3,7 +3,7 @@ import styles from '../styles/Order.module.css';
 
 export default function Order() {
   return (
-    <div>
+    <div className={styles.main}>
       {' '}
       <Head>
         <title>Order</title>
