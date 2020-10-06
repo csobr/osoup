@@ -40,18 +40,18 @@ export default function PaymentView() {
                   }}>
                   <input
                     style={{ width: 20, marginRight: '1.3rem' }}
-                    type='text'
+                    type='number'
                     required
                     minLength={2}
-                    maxLength={15}
+                    maxLength={2}
                     className={styles.input}
                   />
                   <input
                     style={{ width: 20 }}
-                    type='text'
+                    type='number'
                     required
                     minLength={2}
-                    maxLength={15}
+                    maxLength={2}
                     className={styles.input}
                   />
                 </div>
@@ -60,10 +60,10 @@ export default function PaymentView() {
                 CVV
                 <input
                   style={{ width: 30 }}
-                  type='text'
+                  type='number'
                   required
-                  minLength={2}
-                  maxLength={15}
+                  minLength={3}
+                  maxLength={3}
                   className={styles.input}
                 />
               </label>
