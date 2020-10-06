@@ -23,6 +23,12 @@
 .add img {
   height: 20px;
 }
+.add button {
+  align-items: center;
+  height: 20px;
+  width: 25px;
+  background-color: transparent;
+}
 .choice {
   display: flex;
   flex-direction: row;

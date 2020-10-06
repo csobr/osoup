@@ -27,10 +27,13 @@ export default function Order() {
             </p>
           </section>
           <div className={styles.add}>
-            <img src='./icons/minus.png' alt='minus' />
+            <button>
+              <img src='./icons/minus.png' alt='minus' />
+            </button>
             <p>1</p>
-
-            <img src='./icons/plus.png' alt='plus' />
+            <button>
+              <img src='./icons/plus.png' alt='plus' />
+            </button>
           </div>
         </li>
         <section className={styles.choice}>
