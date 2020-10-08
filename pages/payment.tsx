@@ -1,12 +1,12 @@
 import React from 'react';
+import Link from 'next/link';
 import styles from '../styles/Order.module.css';
-import PaymentSuccess from './components/paymentsuccess';
 
 export default function PaymentView() {
   const [popup, setpopup] = React.useState();
 
   return (
-    <div className={styles.container}>
+    <div className={styles.containerPopup}>
       <div className={styles.popup}>
         <section className={styles.content}>
           <h2 style={{ paddingLeft: '1rem', marginTop: 30 }}>Payment</h2>
@@ -92,7 +92,9 @@ export default function PaymentView() {
                 className={styles.input}
               />
             </label>
-            <button onChange={PaymentSuccess}>Pay</button>
+            <Link href='./components/paymentsuccess'>
+              <button>Pay</button>
+            </Link>
           </form>
         </section>
       </div>

@@ -1,10 +1,15 @@
+import React from 'react';
 import Head from 'next/head';
 import styles from '../styles/Order.module.css';
+import PaymentView from './payment';
 
 export default function Order() {
+  const [popup, setPopup] = React.useState(false);
+  const handleClick = () => setPopup(!popup);
   return (
     <div className={styles.main}>
-      {' '}
+      {popup && <PaymentView />}
+
       <Head>
         <title>Order</title>
       </Head>
@@ -182,7 +187,7 @@ export default function Order() {
           }}>
           426 SEK
         </p>
-        <button>Continue </button>
+        <button onClick={handleClick}>Continue </button>
       </div>
     </div>
   );
