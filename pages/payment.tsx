@@ -3,8 +3,6 @@ import Link from 'next/link';
 import styles from '../styles/Order.module.css';
 
 export default function PaymentView() {
-  const [popup, setpopup] = React.useState();
-
   return (
     <div className={styles.containerPopup}>
       <div className={styles.popup}>
@@ -92,7 +90,7 @@ export default function PaymentView() {
                 className={styles.input}
               />
             </label>
-            <Link href='./components/paymentsuccess'>
+            <Link href='./receipt'>
               <button>Pay</button>
             </Link>
           </form>

@@ -172,3 +172,21 @@
 .paymentSuccessPopup img {
   height: 40px;
 }
+
+/* Receipt */
+.receiptDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  margin-bottom: 10%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container button {
+  position: absolute;
+  bottom: 0;
+}
