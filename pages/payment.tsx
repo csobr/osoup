@@ -1,6 +1,10 @@
+import React from 'react';
 import styles from '../styles/Order.module.css';
+import PaymentSuccess from './components/paymentsuccess';
 
 export default function PaymentView() {
+  const [popup, setpopup] = React.useState();
+
   return (
     <div className={styles.container}>
       <div className={styles.popup}>
@@ -19,6 +23,7 @@ export default function PaymentView() {
               Card number
               <input
                 style={{ width: 350 }}
+                value={45170000000000}
                 type='number'
                 required
                 minLength={10}
@@ -44,6 +49,7 @@ export default function PaymentView() {
                     required
                     minLength={2}
                     maxLength={2}
+                    value={10}
                     className={styles.input}
                   />
                   <input
@@ -52,6 +58,7 @@ export default function PaymentView() {
                     required
                     minLength={2}
                     maxLength={2}
+                    value={20}
                     className={styles.input}
                   />
                 </div>
@@ -64,6 +71,7 @@ export default function PaymentView() {
                   required
                   minLength={3}
                   maxLength={3}
+                  value={333}
                   className={styles.input}
                 />
               </label>
@@ -80,10 +88,11 @@ export default function PaymentView() {
                 required
                 minLength={2}
                 maxLength={15}
+                value={'Yusuf Ali'}
                 className={styles.input}
               />
             </label>
-            <button>Pay</button>
+            <button onChange={PaymentSuccess}>Pay</button>
           </form>
         </section>
       </div>
