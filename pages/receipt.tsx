@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 import styles from '../styles/Order.module.css';
 import PaymentSuccess from './components/paymentsuccess';
 
@@ -24,7 +25,6 @@ export default function Receipt() {
         <h2 style={{ textAlign: 'center', paddingBottom: '1rem' }}>
           Thanks for your order!
         </h2>
-
         <p className={styles.title}>Gift</p>
         <li style={{ border: 0 }} className={styles.orderItems}>
           {' '}
@@ -138,10 +138,12 @@ export default function Receipt() {
             className={styles.underTitle}>
             (incl. VAT){' '}
           </p>
-        </section>
-        <button defaultValue='submit' type='submit'>
-          Track order progress
-        </button>
+        </section>{' '}
+        <Link href='./trackorder'>
+          <button defaultValue='submit' type='submit'>
+            Track order progress
+          </button>
+        </Link>
       </div>
     </div>
   );
