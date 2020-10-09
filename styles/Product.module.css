@@ -46,3 +46,25 @@
   bottom: 0;
   position: absolute;
 }
+.popup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 700;
+  align-items: center;
+  height: 92px;
+  width: 100%;
+  border-radius: 4px;
+  bottom: 0;
+  position: absolute;
+  border: 1px solid #d8d8d8;
+}
+.popup img {
+  height: 30px;
+  padding-left: 1rem;
+}
+.popup section {
+  display: flex;
+  align-items: center;
+}
