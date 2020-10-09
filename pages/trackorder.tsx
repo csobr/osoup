@@ -7,9 +7,9 @@ export default function TrackOrder() {
       <Head>
         <title>Product Detail</title>
       </Head>
-      <img src='./map1.png' alt='' className={styles.productImage} />
+      <img src='./map2.png' alt='' className={styles.productImage} />
       <section className={styles.container}>
-        <h3 style={{ marginBottom: 0 }}>Your order is being Preperd</h3>{' '}
+        <h3 style={{ marginBottom: 0 }}>Your order is on its way</h3>{' '}
         <div
           style={{
             margin: 0,
@@ -19,13 +19,13 @@ export default function TrackOrder() {
             width: 150,
           }}>
           <p>Arrives in</p>
-          <p style={{ color: '#20d994' }}>25-30 min</p>
+          <p style={{ color: '#20d994' }}>10-15 min</p>
         </div>
         <section className={styles.progress}>
           <img src='./icons/step1.png' />
           <div className={styles.bar} />
           <img src='./icons/step2.png' />
-          <div style={{ backgroundColor: '#C4C4C4' }} className={styles.bar} />
+          <div className={styles.bar} />
           <img src='./icons/step3.png' />
           <div style={{ backgroundColor: '#C4C4C4' }} className={styles.bar} />
           <img src='./icons/step4.png' />

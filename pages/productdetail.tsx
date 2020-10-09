@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import styles from '../styles/Product.module.css';
 export default function ProductDetail() {
   return (
@@ -49,7 +50,9 @@ export default function ProductDetail() {
 
           <img src='./icons/plus.png' alt='plus' />
         </div>
-        <button className={styles.button}>Add to cart</button>
+        <Link href='/order'>
+          <button className={styles.button}>Add to cart</button>
+        </Link>
       </section>
     </div>
   );

@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 import { InferGetStaticPropsType } from 'next';
 export type Soups = {
@@ -55,7 +56,9 @@ export default function Home({
         <div className={styles.popularSlider}>
           {soups.map((soup) => (
             <div key={soup.id} className={styles.popularImage}>
-              <img width='110' height='110' alt='' src={soup.image} />
+              <Link href='/productdetail'>
+                <img width='110' height='110' alt='' src={soup.image} />
+              </Link>
               <p>{soup.name}</p>
             </div>
           ))}

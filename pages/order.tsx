@@ -78,7 +78,7 @@ export default function Order() {
         </label>
       </form>
       <section>
-        <div className={styles.map}></div>
+        <img src='./map.png' alt='placeholder' className={styles.map} />
       </section>
       <section>
         <p style={{ marginBottom: 2 }} className={styles.title}>
