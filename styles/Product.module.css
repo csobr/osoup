@@ -1,7 +1,6 @@
 .productImage {
   width: 100%;
-  height: 397px;
-  background-color: darkgray;
+  height: 350px;
 }
 .main {
   flex: 1;
@@ -56,8 +55,7 @@
   height: 92px;
   width: 100%;
   border-radius: 4px;
-  bottom: 0;
-  position: absolute;
+
   border: 1px solid #d8d8d8;
 }
 .popup img {

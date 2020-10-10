@@ -1,13 +1,14 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import styles from '../styles/Product.module.css';
+import Popup from './components/popup';
 export default function ProductDetail() {
   return (
     <div className={styles.main}>
       <Head>
         <title>Product Detail</title>
-      </Head>
-      <img src='' alt='' className={styles.productImage} />
+      </Head>  <Popup />
+      <img src='./mushroom.jpg' alt='' className={styles.productImage} />
 
       <section className={styles.description}>
         <h3 style={{ marginBottom: '8px' }}>

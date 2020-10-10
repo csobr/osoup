@@ -40,7 +40,7 @@
 .title {
   margin: 0;
   font-weight: bold;
-  font-size: 30px;
+  padding-left: 1rem;
   line-height: 40px;
   z-index: 2;
   position: relative;

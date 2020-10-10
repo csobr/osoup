@@ -15,7 +15,7 @@ export default function Order() {
       <h2 style={{ textAlign: 'center', paddingBottom: '1rem' }}>Your order</h2>
       <li className={styles.orderItems}>
         {' '}
-        <img alt='' src='' className={styles.smallImage} />
+        <img alt='soup' src='./mushroom.jpg' className={styles.smallImage} />
         <section
           style={{
             flexDirection: 'column',

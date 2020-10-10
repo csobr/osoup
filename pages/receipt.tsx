@@ -28,7 +28,7 @@ export default function Receipt() {
         <p className={styles.title}>Gift</p>
         <li style={{ border: 0 }} className={styles.orderItems}>
           {' '}
-          <img alt='' src='' className={styles.smallImage} />
+          <img alt='soup' src='./mushroom.jpg' className={styles.smallImage} />
           <section
             style={{
               flexDirection: 'column',
