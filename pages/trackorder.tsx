@@ -7,7 +7,8 @@ export default function TrackOrder() {
       <Head>
         <title>Product Detail</title>
       </Head>
-      <img src='./map2.png' alt='' className={styles.productImage} />
+      <Link href="./review">
+        <img src='./map2.png' alt='' className={styles.productImage} /></Link>
       <section className={styles.container}>
         <h3 style={{ marginBottom: 0 }}>Your order is on its way</h3>{' '}
         <div

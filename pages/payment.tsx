@@ -9,12 +9,9 @@ export default function PaymentView() {
         <section className={styles.content}>
           <h2 style={{ paddingLeft: '1rem', marginTop: 30 }}>Payment</h2>
           <section className={styles.cards}>
-            <button>
-              <img src='./icons/visa.png' alt='bank card' />
-            </button>
-            <button>
-              <img src='./icons/masterc.png' alt='bank card' />
-            </button>
+            <input type='image' src='./icons/visa.png' alt='bank card' />
+
+            <input type='image' src='./icons/masterc.png' alt='bank card' />
           </section>
           <form className={styles.userDetails}>
             <label htmlFor='Phone number' className={styles.label}>

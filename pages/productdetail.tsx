@@ -30,7 +30,8 @@ export default function ProductDetail() {
         <p style={{ fontWeight: 'bold' }}>Remove ingredient:</p>
         <li className={styles.removeIngredientList}>
           Corrinader{' '}
-          <img
+          <input
+          type="image"
             src='/icons/remove.png'
             alt='x'
             style={{ right: '10%', position: 'absolute' }}
@@ -38,7 +39,8 @@ export default function ProductDetail() {
         </li>
         <li className={styles.removeIngredientList}>
           Persley{' '}
-          <img
+          <input
+          type='image'
             src='/icons/remove.png'
             alt='x'
             style={{ right: '10%', position: 'absolute' }}
@@ -46,10 +48,10 @@ export default function ProductDetail() {
         </li>
 
         <div className={styles.add}>
-          <img src='./icons/minus.png' alt='minus' />
+          <input type = "image" src='./icons/minus.png' alt='minus' />
           <p>1</p>
 
-          <img src='./icons/plus.png' alt='plus' />
+          <input type="image" src='./icons/plus.png' alt='plus' />
         </div>
         <Link href='/order'>
           <button className={styles.button}>Add to cart</button>
