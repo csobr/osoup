@@ -26,11 +26,6 @@
   font-size: 14px;
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
 .title a:hover,
 .title a:focus,
 .title a:active {
@@ -40,7 +35,7 @@
 .title {
   margin: 0;
   font-weight: bold;
-  font-size: 30px;
+  padding-left: 1rem;
   line-height: 40px;
   z-index: 2;
   position: relative;
@@ -83,7 +78,7 @@
 }
 .adressPick {
   height: 54px;
-  background: #c4c4c4;
+  background-color: #20d994;
   border-radius: 0px 4px 4px 0px;
 }
 .h2 {
@@ -151,8 +146,8 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: #20d994;
+  border-color: #20d994;
 }
 
 .card p {
