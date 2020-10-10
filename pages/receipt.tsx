@@ -5,18 +5,8 @@ import styles from '../styles/Order.module.css';
 import PaymentSuccess from './components/paymentsuccess';
 
 export default function Receipt() {
-  const [popup, setPopup] = React.useState(true);
-
   return (
     <div className={styles.main}>
-      {popup && (
-        <button
-          style={{ all: 'unset' }}
-          type='button'
-          onClick={() => setPopup(!setPopup)}>
-          <PaymentSuccess />{' '}
-        </button>
-      )}
 
       <Head>
         <title>Receipt</title>

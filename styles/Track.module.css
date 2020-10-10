@@ -4,7 +4,7 @@
   flex-direction: column;
   height: 100vh;
 }
-.main button {
+.button {
   background-color: #000000;
 }
 .container {
