@@ -1,13 +1,21 @@
+
 import Head from 'next/head';
 import Link from 'next/link';
+import { useState } from 'react';
 import styles from '../styles/Product.module.css';
 import Popup from './components/popup';
 export default function ProductDetail() {
+  const [toggle, setToggle] = useState(false)
+  const handleChange = () => {
+    setToggle(!toggle)
+  }
   return (
     <div className={styles.main}>
       <Head>
         <title>Product Detail</title>
-      </Head>  <Popup />
+      </Head>
+      {toggle &&
+        <Popup />}
       <img src='./mushroom.jpg' alt='' className={styles.productImage} />
 
       <section className={styles.description}>
@@ -31,7 +39,7 @@ export default function ProductDetail() {
         <li className={styles.removeIngredientList}>
           Corrinader{' '}
           <input
-          type="image"
+            type="image"
             src='/icons/remove.png'
             alt='x'
             style={{ right: '10%', position: 'absolute' }}
@@ -40,7 +48,7 @@ export default function ProductDetail() {
         <li className={styles.removeIngredientList}>
           Persley{' '}
           <input
-          type='image'
+            type='image'
             src='/icons/remove.png'
             alt='x'
             style={{ right: '10%', position: 'absolute' }}
@@ -48,14 +56,14 @@ export default function ProductDetail() {
         </li>
 
         <div className={styles.add}>
-          <input type = "image" src='./icons/minus.png' alt='minus' />
+          <input type="image" src='./icons/minus.png' alt='minus' />
           <p>1</p>
 
           <input type="image" src='./icons/plus.png' alt='plus' />
         </div>
-        <Link href='/order'>
-          <button className={styles.button}>Add to cart</button>
-        </Link>
+
+        <button className={styles.button} onClick={handleChange}>Add to cart</button>
+
       </section>
     </div>
   );
