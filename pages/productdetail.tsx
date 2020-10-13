@@ -1,13 +1,15 @@
 
 import Head from 'next/head';
-import Link from 'next/link';
+import { useRouter } from 'next/router'
 import { useState } from 'react';
 import styles from '../styles/Product.module.css';
 import Popup from './components/popup';
 export default function ProductDetail() {
   const [toggle, setToggle] = useState(false)
+  const router = useRouter()
   const handleChange = () => {
     setToggle(!toggle)
+    setTimeout(() => router.push('/order'), 1000)
   }
   return (
     <div className={styles.main}>
