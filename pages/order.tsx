@@ -28,9 +28,9 @@ export default function Order() {
           </p>
         </section>
         <div className={styles.add}>
-          <input type= "image" src='./icons/minus.png' alt='minus' />
+          <input type="image" src='./icons/minus.png' alt='minus' />
           <p>1</p>
-          <input type= "image" src='./icons/plus.png' alt='add'/>
+          <input type="image" src='./icons/plus.png' alt='add' />
         </div>
       </li>
       <section className={styles.choice}>
@@ -117,7 +117,7 @@ export default function Order() {
         </p>
         <textarea
           className={styles.textarea}
-          autoFocus={true}
+          autoFocus={false}
           placeholder='Add a greeting to the recipient. '
         />
       </section>
