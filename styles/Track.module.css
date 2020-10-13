@@ -35,6 +35,8 @@
   height: 300px;
   flex-direction: column;
   text-align: center;
+  background-color: #ffffff;
+  border-radius: 0.3rem;
 }
 .review p {
   font-weight: 500;

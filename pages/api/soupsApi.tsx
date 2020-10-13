@@ -5,7 +5,7 @@ type Soups = {
 };
 
 export const getStaticProps = async () => {
-  const res = await fetch('http://localhost:3000/api/soups');
+  const res = await fetch("http://localhost:3000/api/soups");
   const soups: Soups[] = await res.json();
 
   return {

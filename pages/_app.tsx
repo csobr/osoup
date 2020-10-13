@@ -1,11 +1,12 @@
-import '../styles/globals.css';
-import type { AppContext, AppProps } from 'next/app';
+import "../styles/globals.css";
+import type { AppContext, AppProps } from "next/app";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <main>
       <Component {...pageProps} />
-    </main>);
+    </main>
+  );
 }
 
 MyApp.getInitalProps = async (appContext: AppContext) => {
