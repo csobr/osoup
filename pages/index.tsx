@@ -23,13 +23,14 @@ export default function Home({
   soups,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
+
     <div className={styles.container}>
       <Head>
         <title>Osoup</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main className={styles.main}>
+      <div className={styles.main}>
         <img src='/logo.png' className={styles.logo} />
         <div className={styles.hero}>
           <h1 className={styles.title}>
@@ -50,7 +51,7 @@ export default function Home({
               className={styles.adressPick}
             />
           </section>
-          <div className={styles.heroImage} />
+          <img src="./hero.png" className={styles.heroImage} />
         </div>
         <h2 className={styles.h2}>Popular</h2>
         <div className={styles.popularSlider}>
@@ -78,11 +79,12 @@ export default function Home({
             </div>,
           ])}
         </div>
-      </main>
+      </div>
 
       <footer className={styles.footer}>
         <p>Online soup delivery</p>
       </footer>
     </div>
+
   );
 }

@@ -15,6 +15,13 @@ a {
 * {
   box-sizing: border-box;
 }
+@media screen and (min-width: 414px) {
+  main {
+    width: 400px;
+    position: absolute;
+    left: 30%;
+  }
+}
 
 button {
   width: 100%;

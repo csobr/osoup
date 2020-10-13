@@ -7,7 +7,7 @@
 }
 .containerPopup {
   min-height: 100%;
-  width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -129,6 +129,7 @@
   width: 85%;
 }
 /* Payment */
+
 .popup {
   display: flex;
   justify-content: center;
