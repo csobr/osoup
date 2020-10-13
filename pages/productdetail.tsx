@@ -29,7 +29,7 @@ export default function ProductDetail() {
         </h3>
         <p style={{ margin: 0 }}>A rich mushroom soup.</p>
         <p style={{ fontWeight: 600, marginBottom: "10px" }}>Ingredients:</p>
-        <p style={{ marginTop: 0 }}>
+        <p style={{ marginTop: 0, color: '#979797' }}>
           Onion, garlic, water, mushroom, oatcream, vegtable brooth, carrots,
           corriander, parsley.
         </p>

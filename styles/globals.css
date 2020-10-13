@@ -14,12 +14,12 @@ a {
 * {
   box-sizing: border-box;
 }
-@media screen and (min-width: 414px) {
+@media screen and (min-width: 415px) {
   body {
     background-color: #25ffaf;
   }
   main {
-    width: 400px;
+    width: 414px;
     position: absolute;
     left: 30%;
     background-color: #fafafa;

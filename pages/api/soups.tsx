@@ -3,7 +3,7 @@ export default (req, res) => {
   res.json([
     {
       id: 1,
-      name: "mushroom soup",
+      name: "Mushroom soup",
       image:
         "https://keyassets-p2.timeincuk.net/wp/prod/wp-content/uploads/sites/53/2018/09/mushroom-soup.jpg",
     },
